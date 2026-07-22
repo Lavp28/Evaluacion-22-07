@@ -8,61 +8,60 @@
 </head>
 <body>
     
-    <header>
-        <h1>Registro del Cliente</h1>
-    </header>
+  
 
-    <main>  
-        <section id = "registro">
+    <main class="registro-container">  
+        <section class ="registro-card">
+            <header>
+            <h1>Registro del Cliente</h1>
+            </header>
             <form action="#" class="formulariosCRM">
+                <fieldset class="grid-fieldset">
                 <!-- Acá van las eqtiquetas asociadas a los imputs mediante el atributo "for"-->
                 <div class="form-group"> 
                     <label for="nombre"> Nombre:</label>
                     <input type="text" name="nombre" id="nombre" required placeholder="Luis" >
                 </div>
-                 <br>
                  
-                 <div>
+                 <div class="form-group">
                     <label for="apellido"> Apellido:</label>
                     <input type="text" name="apellido" id="apellido" required placeholder="Vega">
                  </div>
-                 <br>
+                
 
-                <br>
+              
                  <div class="form-group">
-                    <label type="email" id="email">Correo:</label> 
-                    <input type="text" name="email" id="email" required placeholder="Ejemplo@gmail.com">
+                    <label type="email" id="email">Email:</label> 
+                    <input type="email" name="email" id="email" required placeholder="Ejemplo@gmail.com">
                  </div>    
-                 
+                
 
-                 <br>
-                 <div>
+                 
+                 <div class="form-group">
                     <label for="cedula"> Cedula:</label>
-                    <input type="tel" name="cedula" id="cedula" required placeholder="28737091" minlength="7" maxlength="8">
+                    <input type="tel" name="cedula" id="cedula" required placeholder="28737091" pattern="[0-9]{11}">
                  </div>
-                 <br>
-
-                 <br>
                  
-                 <div>
+
+                 
+                 
+                 <div class="form-group">
                     <label for="telefono"> Telefono:</label>
                     <input type="tel" name="telefono" id="telefono" required placeholder="04264195846" minlength="10" maxlength="11">
                  </div>
-                 <br>
-
-                <br>
                  
-                 <div>
+                 
+                 <div class="form-group">
                     <label for="direccion"> Direccion:</label>
                     <input type="text" name="direccion" id="direccion" required placeholder="Obelisco">
                  </div>
-                 <br>
+               
                  
                  <div class="form-group">
                     <label for="Edad"> Edad:</label>
-                    <input type="number" name="Edad" id="Edad" required placeholder="22" min="0" max="100">
+                    <input type="number" name="Edad" id="Edad" required placeholder="45" min="0" max="100">
                  </div>
-                <br>
+              
                 <fieldset>
                     <legend>
                         Tipo de cliente:
@@ -74,15 +73,13 @@
                     <input type="radio" name="cliente" id="juridico" value="JD">
                     <label for="juridico">Juridico</label>
                 </fieldset>
-                <br>    
-                </div>
+                   
                  </div>
-                 
 
-                <div>
+                <div class="form-group">
                  <select id="País" name="País">
                         <option value="">
-                        Seleccione Pais
+                        Seleciona Pais
                         </option>
                     
                         <option value="Ve">
@@ -92,9 +89,18 @@
                         <option value="Mx">
                         México
                         </option>
+
+                        <option value="EU">
+                        Estados Unidos
+                        </option>
+
+                        <option value="Ar">
+                        Argentina
+                        </option>
+
                     </select>
                 </div>
-                <br>
+                
                 <fieldset>
                     <legend>
                         Género
@@ -105,10 +111,13 @@
 
                     <input type="radio" name="genero" id="Femenino" value="F">
                     <label for="Femenino">Femenino</label>
+
+                    <input type="radio" name="genero" id="Otro" value="F">
+                    <label for="Femenino">Otro</label>
                 </fieldset>
 
-                <br>
-                 <div>
+             
+                 <div class="form-group">
                  <select id="industria" name="industria">
                         <option value="">
                         Industria
@@ -129,22 +138,27 @@
                         <option value="Ed">
                         Educacion
                         </option>
+
+                        <option value="Ed">
+                         Entretenimiento
+                         </option>
+
                     </select>
                 </div>
-
                 <br>
-                  <label>
+                <label>
                     <input type="checkbox" name="Termino" id="Termino">
-                    Acepta los términos y condiciones
+                    Acepta los términos y condiciones.
                 </label>
 
-                <br>
+            </fieldset>
 
                 <button type="submit" class="btn"> Registrar</button>
 
                 <br>
                 <a href="login_luisvega.html">Ya estas registrado? Inicia Sesion</a> 
                 <br>
+            
             </form>
         </section>
     </main>

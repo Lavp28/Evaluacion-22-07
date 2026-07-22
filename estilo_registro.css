@@ -7,8 +7,8 @@
 
 /* Variables de color */
 :root {
-    --primary: #2c3e50;
-    --secondary: #3498db;
+    --primary: #cb70ff;
+    --secondary: #4e0364;
     --accent: #e74c3c;
     --success: #2ecc71;
     --light: #ecf0f1;
@@ -29,7 +29,7 @@ body {
 }
 
 /* Contenedor principal */
-.login-container, #registro {
+.registro-container, #registro {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -37,17 +37,15 @@ body {
 }
 
 /* Tarjeta de registro/login */
-.login-card, .formulariosCRM {
+.registro-card, .formulariosCRM {
     background: var(--white);
     padding: 35px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 480px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.login-card:hover, .formulariosCRM:hover {
+.registro-card:hover, .formulariosCRM:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
@@ -62,6 +60,7 @@ header h1 {
     font-size: 26px;
     color: var(--primary);
     margin-bottom: 6px;
+
 }
 
 header p {
@@ -69,15 +68,17 @@ header p {
     font-size: 15px;  
 }
 
-/* Campos del formulario (se agregaron text, tel, number y select) */
+/* Campos del formulario */
 .form-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 18px;
 }
 
 label {
     display: block;
-    font-weight: 600;
-    margin-bottom: 6px;
+    font-weight: bold;
+    margin-bottom: 5px;
     color: var(--dark);
     font-size: 14px;
 }
@@ -114,6 +115,8 @@ fieldset {
     margin-bottom: 18px;
 }
 
+
+
 legend {
     padding: 0 6px;
     font-weight: 600;
@@ -127,6 +130,18 @@ fieldset label {
     font-weight: 400;
     cursor: pointer;
 }
+
+.grid-fieldset {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px 20px;
+    border: none;
+    padding: 10px;
+    }
+
+.full-width {
+   grid-column: 1 / -1;
+  }
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -186,7 +201,7 @@ a:hover {
 }
 
 /* Responsive */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .login-card, .formulariosCRM {
         padding: 22px;
     }
