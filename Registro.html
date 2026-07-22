@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>  
+    <link rel="stylesheet" href="estilo_registro.css">  
+</head>
+<body>
+    
+    <header>
+        <h1>Registro del Cliente</h1>
+    </header>
+
+    <main>  
+        <section id = "registro">
+            <form action="#" class="formulariosCRM">
+                <!-- Acá van las eqtiquetas asociadas a los imputs mediante el atributo "for"-->
+                <div class="form-group"> 
+                    <label for="nombre"> Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required placeholder="Luis" >
+                </div>
+                 <br>
+                 
+                 <div>
+                    <label for="apellido"> Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" required placeholder="Vega">
+                 </div>
+                 <br>
+
+                <br>
+                 <div class="form-group">
+                    <label type="email" id="email">Correo:</label> 
+                    <input type="text" name="email" id="email" required placeholder="Ejemplo@gmail.com">
+                 </div>    
+                 
+
+                 <br>
+                 <div>
+                    <label for="cedula"> Cedula:</label>
+                    <input type="tel" name="cedula" id="cedula" required placeholder="28737091" minlength="7" maxlength="8">
+                 </div>
+                 <br>
+
+                 <br>
+                 
+                 <div>
+                    <label for="telefono"> Telefono:</label>
+                    <input type="tel" name="telefono" id="telefono" required placeholder="04264195846" minlength="10" maxlength="11">
+                 </div>
+                 <br>
+
+                <br>
+                 
+                 <div>
+                    <label for="direccion"> Direccion:</label>
+                    <input type="text" name="direccion" id="direccion" required placeholder="Obelisco">
+                 </div>
+                 <br>
+                 
+                 <div class="form-group">
+                    <label for="Edad"> Edad:</label>
+                    <input type="number" name="Edad" id="Edad" required placeholder="22" min="0" max="100">
+                 </div>
+                <br>
+                <fieldset>
+                    <legend>
+                        Tipo de cliente:
+                    </legend>
+                    
+                    <input type="radio" name="cliente" id="natural" value="NT" checked required>
+                    <label for="natural">Natural</label>
+
+                    <input type="radio" name="cliente" id="juridico" value="JD">
+                    <label for="juridico">Juridico</label>
+                </fieldset>
+                <br>    
+                </div>
+                 </div>
+                 
+
+                <div>
+                 <select id="País" name="País">
+                        <option value="">
+                        Seleccione Pais
+                        </option>
+                    
+                        <option value="Ve">
+                        Venezuela
+                        </option>
+
+                        <option value="Mx">
+                        México
+                        </option>
+                    </select>
+                </div>
+                <br>
+                <fieldset>
+                    <legend>
+                        Género
+                    </legend>
+                    
+                    <input type="radio" name="genero" id="Masculino" value="M">
+                    <label for="Masculino">Masculino</label>
+
+                    <input type="radio" name="genero" id="Femenino" value="F">
+                    <label for="Femenino">Femenino</label>
+                </fieldset>
+
+                <br>
+                 <div>
+                 <select id="industria" name="industria">
+                        <option value="">
+                        Industria
+                        </option>
+                    
+                        <option value="Te">
+                        Tecnologia
+                        </option>
+
+                        <option value="Co">
+                        Comercio
+                        </option>
+
+                        <option value="Sa">
+                        Salud
+                        </option>
+
+                        <option value="Ed">
+                        Educacion
+                        </option>
+                    </select>
+                </div>
+
+                <br>
+                  <label>
+                    <input type="checkbox" name="Termino" id="Termino">
+                    Acepta los términos y condiciones
+                </label>
+
+                <br>
+
+                <button type="submit" class="btn"> Registrar</button>
+
+                <br>
+                <a href="login_luisvega.html">Ya estas registrado? Inicia Sesion</a> 
+                <br>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
